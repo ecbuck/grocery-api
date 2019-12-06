@@ -4,7 +4,7 @@ const fs = require("fs");
 const DAL = require("./dataAccessLayer");
 require("dotenv").config();
 const app = express();
-const port = 3001;
+const port = process.env.PORT;
 const cors = require("cors");
 const ObjectId = require("mongodb").ObjectId;
 
